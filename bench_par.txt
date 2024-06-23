@@ -1,0 +1,572 @@
+fma f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.1238988139999998e-05
+Total: 2.2477976279999998
+Iters: 200000
+Warmup Mean: 0.000467002
+Warmup Total: 0.000934004
+Warmup Iters: 2
+Fastest Mean: 1.123898814e-05
+Slowest Mean: 1.123898814e-05
+
+mod f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 8.9601687883090595e-06
+Total: 2.549418905
+Iters: 284528
+Warmup Mean: 5.7760000000000003e-05
+Warmup Total: 0.00011552000000000001
+Warmup Iters: 2
+Fastest Mean: 8.9601687883090595e-06
+Slowest Mean: 8.9601687883090595e-06
+
+mul f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 8.3122206407630921e-06
+Total: 2.443477004
+Iters: 293962
+Warmup Mean: 5.6324499999999999e-05
+Warmup Total: 0.000112649
+Warmup Iters: 2
+Fastest Mean: 8.3122206407630904e-06
+Slowest Mean: 8.3122206407630904e-06
+
+sub f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 7.8452186667457012e-06
+Total: 2.3823026359999999
+Iters: 303663
+Warmup Mean: 8.6899999999999998e-06
+Warmup Total: 1.738e-05
+Warmup Iters: 2
+Fastest Mean: 7.8452186667457012e-06
+Slowest Mean: 7.8452186667457012e-06
+
+add f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 8.5940259313777262e-06
+Total: 2.603921105
+Iters: 302992
+Warmup Mean: 4.4549499999999998e-05
+Warmup Total: 8.9098999999999995e-05
+Warmup Iters: 2
+Fastest Mean: 8.5940259313777262e-06
+Slowest Mean: 8.5940259313777262e-06
+
+div f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 8.4757861560614374e-06
+Total: 2.4722173060000001
+Iters: 291680
+Warmup Mean: 8.9150000000000002e-06
+Warmup Total: 1.783e-05
+Warmup Iters: 2
+Fastest Mean: 8.4757861560614357e-06
+Slowest Mean: 8.4757861560614357e-06
+
+copysign f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 8.0862425860400722e-06
+Total: 2.2898783479999998
+Iters: 283182
+Warmup Mean: 5.6064999999999999e-05
+Warmup Total: 0.00011213
+Warmup Iters: 2
+Fastest Mean: 8.0862425860400738e-06
+Slowest Mean: 8.0862425860400738e-06
+
+atan2 f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 2.0622550804929597e-05
+Total: 2.3711602690000002
+Iters: 114979
+Warmup Mean: 0.000138145
+Warmup Total: 0.00027629
+Warmup Iters: 2
+Fastest Mean: 2.0622550804929597e-05
+Slowest Mean: 2.0622550804929597e-05
+
+hypot f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.1362202414999999e-05
+Total: 2.272440483
+Iters: 200000
+Warmup Mean: 9.5400000000000001e-06
+Warmup Total: 1.908e-05
+Warmup Iters: 2
+Fastest Mean: 1.1362202414999999e-05
+Slowest Mean: 1.1362202414999999e-05
+
+hypot_fma f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 2.7088538566690572e-05
+Total: 2.4175978900000001
+Iters: 89248
+Warmup Mean: 2.6040000000000001e-05
+Warmup Total: 5.2080000000000003e-05
+Warmup Iters: 2
+Fastest Mean: 2.7088538566690572e-05
+Slowest Mean: 2.7088538566690572e-05
+
+nextafter f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.1244924279999999e-05
+Total: 2.2489848559999999
+Iters: 200000
+Warmup Mean: 5.1459999999999999e-05
+Warmup Total: 0.00010292
+Warmup Iters: 2
+Fastest Mean: 1.1244924279999999e-05
+Slowest Mean: 1.1244924279999999e-05
+
+scalb f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3831727345268426e-05
+Total: 2.4267627310000002
+Iters: 175449
+Warmup Mean: 5.7809999999999997e-05
+Warmup Total: 0.00011561999999999999
+Warmup Iters: 2
+Fastest Mean: 1.3831727345268426e-05
+Slowest Mean: 1.3831727345268426e-05
+
+remainder f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3762957186192066e-05
+Total: 2.5090008579999998
+Iters: 182301
+Warmup Mean: 1.5934999999999999e-05
+Warmup Total: 3.1869999999999998e-05
+Warmup Iters: 2
+Fastest Mean: 1.3762957186192066e-05
+Slowest Mean: 1.3762957186192066e-05
+
+abs f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 9.7385065400000004e-06
+Total: 1.9477013080000001
+Iters: 200000
+Warmup Mean: 5.6805000000000002e-05
+Warmup Total: 0.00011361
+Warmup Iters: 2
+Fastest Mean: 9.7385065400000004e-06
+Slowest Mean: 9.7385065400000004e-06
+
+floor f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 9.6668994949999993e-06
+Total: 1.933379899
+Iters: 200000
+Warmup Mean: 5.0510000000000003e-05
+Warmup Total: 0.00010102000000000001
+Warmup Iters: 2
+Fastest Mean: 9.6668994949999993e-06
+Slowest Mean: 9.6668994949999993e-06
+
+ceil f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 9.4243652700000004e-06
+Total: 1.884873054
+Iters: 200000
+Warmup Mean: 1.4015e-05
+Warmup Total: 2.8030000000000001e-05
+Warmup Iters: 2
+Fastest Mean: 9.4243652700000004e-06
+Slowest Mean: 9.4243652700000004e-06
+
+trunc f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 9.8804304600000003e-06
+Total: 1.9760860920000001
+Iters: 200000
+Warmup Mean: 1.3020000000000001e-05
+Warmup Total: 2.6040000000000001e-05
+Warmup Iters: 2
+Fastest Mean: 9.8804304600000003e-06
+Slowest Mean: 9.8804304600000003e-06
+
+round f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.017534317e-05
+Total: 2.0350686339999999
+Iters: 200000
+Warmup Mean: 5.4769999999999999e-05
+Warmup Total: 0.00010954
+Warmup Iters: 2
+Fastest Mean: 1.017534317e-05
+Slowest Mean: 1.017534317e-05
+
+roundeven f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.0548067270000002e-05
+Total: 2.1096134540000002
+Iters: 200000
+Warmup Mean: 9.3449999999999995e-06
+Warmup Total: 1.8689999999999999e-05
+Warmup Iters: 2
+Fastest Mean: 1.054806727e-05
+Slowest Mean: 1.054806727e-05
+
+round_half_down f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.059164258e-05
+Total: 2.1183285160000001
+Iters: 200000
+Warmup Mean: 5.2639999999999997e-05
+Warmup Total: 0.00010527999999999999
+Warmup Iters: 2
+Fastest Mean: 1.059164258e-05
+Slowest Mean: 1.059164258e-05
+
+round_half_up f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.0973385375e-05
+Total: 2.194677075
+Iters: 200000
+Warmup Mean: 8.7199999999999995e-06
+Warmup Total: 1.7439999999999999e-05
+Warmup Iters: 2
+Fastest Mean: 1.0973385375e-05
+Slowest Mean: 1.0973385375e-05
+
+rsqrt f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.044701785e-05
+Total: 2.08940357
+Iters: 200000
+Warmup Mean: 6.6539999999999997e-05
+Warmup Total: 0.00013307999999999999
+Warmup Iters: 2
+Fastest Mean: 1.044701785e-05
+Slowest Mean: 1.044701785e-05
+
+sqrt f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.0553117464999999e-05
+Total: 2.1106234929999999
+Iters: 200000
+Warmup Mean: 5.876e-05
+Warmup Total: 0.00011752
+Warmup Iters: 2
+Fastest Mean: 1.0553117464999999e-05
+Slowest Mean: 1.0553117464999999e-05
+
+exp2 f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.2466763357940333e-05
+Total: 2.0434271819999998
+Iters: 163910
+Warmup Mean: 6.2150000000000006e-05
+Warmup Total: 0.00012430000000000001
+Warmup Iters: 2
+Fastest Mean: 1.2466763357940334e-05
+Slowest Mean: 1.2466763357940334e-05
+
+exp f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.242094045616632e-05
+Total: 2.2153492560000001
+Iters: 178356
+Warmup Mean: 6.0724999999999999e-05
+Warmup Total: 0.00012145
+Warmup Iters: 2
+Fastest Mean: 1.242094045616632e-05
+Slowest Mean: 1.242094045616632e-05
+
+log f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.5762839291328391e-05
+Total: 2.557032027
+Iters: 162219
+Warmup Mean: 1.3594999999999999e-05
+Warmup Total: 2.7189999999999999e-05
+Warmup Iters: 2
+Fastest Mean: 1.5762839291328391e-05
+Slowest Mean: 1.5762839291328391e-05
+
+log2 f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.6064804387734803e-05
+Total: 2.826522008
+Iters: 175945
+Warmup Mean: 7.3705e-05
+Warmup Total: 0.00014741
+Warmup Iters: 2
+Fastest Mean: 1.6064804387734803e-05
+Slowest Mean: 1.6064804387734803e-05
+
+tanh f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3162103885e-05
+Total: 2.6324207770000001
+Iters: 200000
+Warmup Mean: 6.1815000000000004e-05
+Warmup Total: 0.00012363000000000001
+Warmup Iters: 2
+Fastest Mean: 1.3162103885e-05
+Slowest Mean: 1.3162103885e-05
+
+reciprocal f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.0145046867341461e-05
+Total: 2.6079466180000002
+Iters: 257066
+Warmup Mean: 1.4015e-05
+Warmup Total: 2.8030000000000001e-05
+Warmup Iters: 2
+Fastest Mean: 1.0145046867341461e-05
+Slowest Mean: 1.0145046867341461e-05
+
+acos f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.278535202e-05
+Total: 2.5570704040000001
+Iters: 200000
+Warmup Mean: 6.9140000000000005e-05
+Warmup Total: 0.00013828000000000001
+Warmup Iters: 2
+Fastest Mean: 1.278535202e-05
+Slowest Mean: 1.278535202e-05
+
+asin f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3895287065963406e-05
+Total: 2.3262239029999998
+Iters: 167411
+Warmup Mean: 7.7940000000000003e-05
+Warmup Total: 0.00015588000000000001
+Warmup Iters: 2
+Fastest Mean: 1.3895287065963407e-05
+Slowest Mean: 1.3895287065963407e-05
+
+atan f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3388411126153847e-05
+Total: 2.175616808
+Iters: 162500
+Warmup Mean: 6.6245e-05
+Warmup Total: 0.00013249
+Warmup Iters: 2
+Fastest Mean: 1.3388411126153845e-05
+Slowest Mean: 1.3388411126153845e-05
+
+cos f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.1750462994999999e-05
+Total: 2.3500925989999999
+Iters: 200000
+Warmup Mean: 5.1505000000000002e-05
+Warmup Total: 0.00010301
+Warmup Iters: 2
+Fastest Mean: 1.1750462994999999e-05
+Slowest Mean: 1.1750462994999999e-05
+
+sin f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3711182537148914e-05
+Total: 2.2763442359999999
+Iters: 166021
+Warmup Mean: 5.9360000000000001e-05
+Warmup Total: 0.00011872
+Warmup Iters: 2
+Fastest Mean: 1.3711182537148916e-05
+Slowest Mean: 1.3711182537148916e-05
+
+tan f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3760899579934929e-05
+Total: 2.470026431
+Iters: 179496
+Warmup Mean: 5.2064999999999997e-05
+Warmup Total: 0.00010412999999999999
+Warmup Iters: 2
+Fastest Mean: 1.3760899579934929e-05
+Slowest Mean: 1.3760899579934929e-05
+
+acosh f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.599730574535947e-05
+Total: 2.643218831
+Iters: 165229
+Warmup Mean: 6.5320000000000005e-05
+Warmup Total: 0.00013064000000000001
+Warmup Iters: 2
+Fastest Mean: 1.599730574535947e-05
+Slowest Mean: 1.599730574535947e-05
+
+asinh f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3214116726088096e-05
+Total: 2.3201610430000001
+Iters: 175582
+Warmup Mean: 6.7114999999999997e-05
+Warmup Total: 0.00013422999999999999
+Warmup Iters: 2
+Fastest Mean: 1.3214116726088096e-05
+Slowest Mean: 1.3214116726088096e-05
+
+atanh f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3240666579678072e-05
+Total: 2.5368587539999998
+Iters: 191596
+Warmup Mean: 1.5444999999999999e-05
+Warmup Total: 3.0889999999999997e-05
+Warmup Iters: 2
+Fastest Mean: 1.3240666579678072e-05
+Slowest Mean: 1.3240666579678072e-05
+
+cosh f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3623009988222245e-05
+Total: 2.3827461849999998
+Iters: 174906
+Warmup Mean: 9.9132500000000007e-05
+Warmup Total: 0.00019826500000000001
+Warmup Iters: 2
+Fastest Mean: 1.3623009988222246e-05
+Slowest Mean: 1.3623009988222246e-05
+
+sinh f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.5109397408259953e-05
+Total: 2.4811745859999998
+Iters: 164214
+Warmup Mean: 6.4305000000000002e-05
+Warmup Total: 0.00012861
+Warmup Iters: 2
+Fastest Mean: 1.5109397408259955e-05
+Slowest Mean: 1.5109397408259955e-05
+
+expm1 f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.2669058463855259e-05
+Total: 2.3724205569999999
+Iters: 187261
+Warmup Mean: 6.3410000000000004e-05
+Warmup Total: 0.00012682000000000001
+Warmup Iters: 2
+Fastest Mean: 1.2669058463855261e-05
+Slowest Mean: 1.2669058463855261e-05
+
+log10 f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.9794809914607684e-05
+Total: 2.2624675939999999
+Iters: 114296
+Warmup Mean: 8.577e-05
+Warmup Total: 0.00017154
+Warmup Iters: 2
+Fastest Mean: 1.9794809914607684e-05
+Slowest Mean: 1.9794809914607684e-05
+
+log1p f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.3516402502306581e-05
+Total: 2.5344200840000002
+Iters: 187507
+Warmup Mean: 5.6499999999999998e-05
+Warmup Total: 0.000113
+Warmup Iters: 2
+Fastest Mean: 1.3516402502306581e-05
+Slowest Mean: 1.3516402502306581e-05
+
+cbrt f32 100x100
+---------------------
+Benchmark Report (s)
+---------------------
+Mean: 1.4292004119163111e-05
+Total: 2.5397748839999998
+Iters: 177706
+Warmup Mean: 6.1760000000000005e-05
+Warmup Total: 0.00012352000000000001
+Warmup Iters: 2
+Fastest Mean: 1.4292004119163111e-05
+Slowest Mean: 1.4292004119163111e-05
+
