@@ -6,20 +6,20 @@ An N-dimensional array (NDArray) is a fundamental data structure that allows you
 
 ### Example
 Creating a row major 3D array of size 3x2x4 with random float32 elements:
-> ```python
+>```python
     >>> import numojo as nj
     >>> var arr = nj.NDArray[nj.f32](data=List[Int](1,2,3,4,5,6), shape=List[Int](2,3)) # creates a 2x3 array filled with given data elements
     >>> arr.shape 
     > Shape: [2,3]
     >>> arr.dtype
     > DType: Float32
->```
+```
 
 The array can be indexed using numpy syntax,
 >```python
     >>> arr[1,2] # selects element from 1st row, 2nd column
     > 6
->```
+```
 
 One can also slice similar to numpy (Currently it returns a new array instead of view, this behaviour will change in later versions),
 >```python
