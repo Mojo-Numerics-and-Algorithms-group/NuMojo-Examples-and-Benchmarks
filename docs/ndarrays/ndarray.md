@@ -4,7 +4,6 @@ Welcome to the NDArray API documentation!
 
 An N-dimensional array (NDArray) is a fundamental data structure that allows you to store and manipulate multi-dimensional data efficiently. In this documentation, you will learn how to effectively work with N-dimensional arrays in our library.
 
-
 ### Example
 Creating a row major 3D array of size 3x2x4 with random float32 elements:
 > ```python

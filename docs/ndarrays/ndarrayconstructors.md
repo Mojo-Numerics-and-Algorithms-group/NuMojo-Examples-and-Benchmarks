@@ -2,9 +2,9 @@
 
 <!-- WRITE ALL THE CONSTUCTORS HERE AND DEFINE THEIR SYNTAX TOO -->
 
-An array object represents a multidimensional, homogeneous array of fixed-size items. An associated data-type object describes the format of each element in the array (its byte-order, how many bytes it occupies in memory, whether it is an integer, a floating point number, or something else, etc.)
+An array object represents a multidimensional, homogeneous array of fixed-size items. It is accompanied by intrinsic information such as shape, stride, datatype etc (Check [attributes](./attributes.md) for more information) that defines the characteristics of the array and its elements.
 
-Arrays should be constructed using array, zeros or empty (refer to the See Also section below). The parameters given here refer to a low-level method (ndarray(…)) for instantiating an array. Following are the available constructors:
+When creating arrays, it is recommended to use functions like zeros, ones, identity etc (Look at [Array creation routines](../routines/array_creation_routines.md)). The parameters provided here pertain to a lower-level method (ndarray(…)) for array instantiation. Below are the available constructors:
 
 ## Constructor Methods: 
 1) **`numojo.ndarray[dtype](data, shape)`**
