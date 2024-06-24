@@ -1,7 +1,11 @@
-# NuMojo Examples & Benchmarks
+# Welcome to NuMojo Documentation
 
-This repository contains various examples and benchmarks showcasing the capabilities of the NuMojo Library.
+Thank you for exploring the NuMojo Library! This repository showcases various examples and benchmarks to demonstrate the capabilities of NuMojo.
 
-For a better understanding of syntax and NuMojo capabilities, refer to the code examples in the `examples` notebook. Since NuMojo is still in its early stages, not everything may be well-documented; we will strive to update it as we progress.
+For a deeper dive into the syntax and features of NuMojo, we recommend checking out the code examples in the `examples` notebook. While NuMojo is still evolving, we are committed to continuously updating the documentation to provide comprehensive information.
 
-Feel free to explore the examples notebook and benchmarks provided here to gain a better understanding of the NuMojo Library and its features.
+Feel free to delve into the examples notebook and benchmarks included here to enhance your understanding of the NuMojo Library and its functionalities.
+
+
+## Documentation 
+While not all functionalities are currently documented, we are working diligently to update them soon. In the meantime, please refer to [NuMojo Docs](./docs/README.md) for the available APIs.
