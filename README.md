@@ -9,3 +9,14 @@ Feel free to delve into the examples notebook and benchmarks included here to en
 
 ## Documentation 
 While not all functionalities are currently documented, we are working diligently to update them soon. In the meantime, please refer to [NuMojo Docs](./docs/README.md) for the available APIs.
+
+
+## Using the examples
+
+To use the examples, follow these steps:
+1. Clone the NuMojo repository.
+2. Build the package from the top of NuMojo directory using the command:
+```
+mojo package numojo
+```
+3. Move the numojo.mojopkg file to the directory containing the examples. 
