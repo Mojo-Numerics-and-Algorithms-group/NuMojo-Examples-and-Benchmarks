@@ -48,13 +48,13 @@ NDArrays come with several intrinsic attributes that provide valuable informatio
 
 | Attributes | Description| 
 | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| **[NDArray.ndim](./attributes.md#ndim)**                 | Number of dimensions in the array.                                                                         |
-| **[NDArray.ndshape](./attributes.md#nshape)**            | Shape and size of the array.                                                                               |
-| **[NDArray.stride](./attributes.md#stride)**             | Stride to step through each dimension of the array when traversing.                                        |
-| **[NDArray.coefficients](./attributes.md#coefficients)** | Information about strides required to create the array after slicing - only for arrays created by slicing. |
-| **[NDArray.data](./attributes.md#data)**                 | DTypePointer object pointing to the start of the array data stored in heap.                                |
-| **[NDArray.datatype](./attributes.md#datatype)**         | Information about the datatype of array elements.                                                          |
-| **[NDArray.order](./attributes.md#order)**               | Denotes whether the array is C-style (row-major) or Fortran-style (column-major).                          |
+| [**NDArray.ndim**](./attributes.md#ndim)                 | Number of dimensions in the array.                                                                         |
+| [**NDArray.ndshape**](./attributes.md#nshape)            | Shape and size of the array.                                                                               |
+| [**NDArray.stride**](./attributes.md#stride)             | Stride to step through each dimension of the array when traversing.                                        |
+| [**NDArray.coefficients**](./attributes.md#coefficients) | Information about strides required to create the array after slicing - only for arrays created by slicing. |
+| [**NDArray.data**](./attributes.md#data)                 | DTypePointer object pointing to the start of the array data stored in heap.                                |
+| [**NDArray.datatype**](./attributes.md#datatype)         | Information about the datatype of array elements.                                                          |
+| [**NDArray.order**](./attributes.md#order)               | Denotes whether the array is C-style (row-major) or Fortran-style (column-major).                          |
 
 These attributes not only provide information about the array but also allow you to modify certain properties to change the array structure.
 
