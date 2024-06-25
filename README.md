@@ -6,17 +6,19 @@ For a deeper dive into the syntax and features of NuMojo, we recommend checking 
 
 Feel free to delve into the examples notebook and benchmarks included here to enhance your understanding of the NuMojo Library and its functionalities.
 
+## Documentation
 
-## Documentation 
-While not all functionalities are currently documented, we are working diligently to update them soon. In the meantime, please refer to [NuMojo Docs](./docs/README.md) for the available APIs.
-
+While not all functionalities are currently documented, we are working diligently to update them soon. In the meantime, please refer to [NuMojo🔥 Docs](./docs/README.md) for the available APIs.
 
 ## Using the examples
 
 To use the examples, follow these steps:
+
 1. Clone the NuMojo repository.
 2. Build the package from the top of NuMojo directory using the command:
+
 ```
 mojo package numojo
 ```
-3. Move the numojo.mojopkg file to the directory containing the examples. 
+
+3. Move the numojo.mojopkg file to the directory containing the examples.

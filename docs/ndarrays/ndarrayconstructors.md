@@ -27,7 +27,9 @@ When creating arrays, it is recommended to use functions like zeros, ones, ident
 ```python
 var arr = nj.NDArray[nj.f32](3, 4, 5, 6, random = True, order = "C")
 ```
+
 ---
+
 <br>
 
 2. **`numojo.ndarray[dtype](shape, random, order)`**
@@ -49,7 +51,9 @@ var arr = nj.NDArray[nj.f32](3, 4, 5, 6, random = True, order = "C")
 ```python
 var arr = nj.NDArray[nj.f32](shape=List[Int](2, 3, 4), random = True, order = "C")
 ```
+
 ---
+
 <br>
 
 3. **`numojo.ndarray[dtype](shape, random, order)`**
@@ -71,7 +75,9 @@ var arr = nj.NDArray[nj.f32](shape=List[Int](2, 3, 4), random = True, order = "C
 ```python
 var arr = nj.NDArray[nj.f32](shape=VariadicList[Int](2, 3, 4), random = True, order = "C")
 ```
+
 ---
+
 <br>
 
 4. **`numojo.ndarray[dtype](shape, fill, order)`**
@@ -82,18 +88,20 @@ var arr = nj.NDArray[nj.f32](shape=VariadicList[Int](2, 3, 4), random = True, or
 | ------------- | ------------------------------ | -------- |
 | `dtype`       | Datatype of the array elements | DType    |
 
-| **Args** | **Description**                                             | **Type**          |
-| -------- | ----------------------------------------------------------- | ----------------- |
-| `shape`  | Shape of the array                                          | Variadic integer arguments     |
-| `fill`   | Value to be splatted across the array                       | Scalar[dtype]     |
-| `order`  | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional) |
+| **Args** | **Description**                                             | **Type**                   |
+| -------- | ----------------------------------------------------------- | -------------------------- |
+| `shape`  | Shape of the array                                          | Variadic integer arguments |
+| `fill`   | Value to be splatted across the array                       | Scalar[dtype]              |
+| `order`  | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional)          |
 
 ### Example
 
 ```python
 var arr = nj.NDArray[nj.f32](3, 3, 4, fill=10.0, order="C")
 ```
+
 ---
+
 <br>
 
 5. **`numojo.ndarray[dtype](shape, fill, order)`**
@@ -115,7 +123,9 @@ var arr = nj.NDArray[nj.f32](3, 3, 4, fill=10.0, order="C")
 ```python
 var arr = nj.NDArray[nj.f32](shape=List[Int](3, 3, 4), fill=16.0, order="C")
 ```
+
 ---
+
 <br>
 
 6. **`numojo.ndarray[dtype](shape, fill, order)`**
@@ -126,18 +136,20 @@ var arr = nj.NDArray[nj.f32](shape=List[Int](3, 3, 4), fill=16.0, order="C")
 | ------------- | ------------------------------ | -------- |
 | `dtype`       | Datatype of the array elements | DType    |
 
-| **Args** | **Description**                                             | **Type**          |
-| -------- | ----------------------------------------------------------- | ----------------- |
-| `shape`  | Shape of the array                                          | Variadic list of Ints      |
-| `fill`   | Value to be splatted across the array                       | Scalar[dtype]     |
-| `order`  | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional) |
+| **Args** | **Description**                                             | **Type**              |
+| -------- | ----------------------------------------------------------- | --------------------- |
+| `shape`  | Shape of the array                                          | Variadic list of Ints |
+| `fill`   | Value to be splatted across the array                       | Scalar[dtype]         |
+| `order`  | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional)     |
 
 ### Example
 
 ```python
 var arr = nj.NDArray[nj.f32](shape=VariadicList[Int](3, 3, 4), fill=3.0, order="C")
 ```
+
 ---
+
 <br>
 
 7. **`numojo.ndarray[dtype](shape, random, order)`**
@@ -148,11 +160,11 @@ var arr = nj.NDArray[nj.f32](shape=VariadicList[Int](3, 3, 4), fill=3.0, order="
 | ------------- | ------------------------------ | ---------------- |
 | `dtype`       | Datatype of the array elements | Datatype (DType) |
 
-| **Args**     | **Description**               | **Type**                   |
-| ------------ | ----------------------------- | -------------------------- |
-| `shape`      | Shape of the array            | NDArrayShape |
-| `random` | Initialize with random values (default: False)  | Bool (optional)              |
-| `order`      | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional) |
+| **Args** | **Description**                                             | **Type**          |
+| -------- | ----------------------------------------------------------- | ----------------- |
+| `shape`  | Shape of the array                                          | NDArrayShape      |
+| `random` | Initialize with random values (default: False)              | Bool (optional)   |
+| `order`  | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional) |
 
 ### Example
 
@@ -160,7 +172,9 @@ var arr = nj.NDArray[nj.f32](shape=VariadicList[Int](3, 3, 4), fill=3.0, order="
 var shape = NDArrayShape(2, 3, 5)
 var arr = nj.NDArray[nj.f16](shape, random=True, order="F")
 ```
+
 ---
+
 <br>
 
 8. **`numojo.ndarray[dtype](shape, fill, order)`**
@@ -171,11 +185,11 @@ var arr = nj.NDArray[nj.f16](shape, random=True, order="F")
 | ------------- | ------------------------------ | ---------------- |
 | `dtype`       | Datatype of the array elements | Datatype (DType) |
 
-| **Args**     | **Description** | **Type**                   |
-| ------------ | ----------------------------- | -------------------------- |
-| `shape`      | Shape of the array            | NDArrayShape |
-| `fill` | Value to be splatted across the array| Scalar[dtype] |
-| `order`      | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional) |
+| **Args** | **Description**                                             | **Type**          |
+| -------- | ----------------------------------------------------------- | ----------------- |
+| `shape`  | Shape of the array                                          | NDArrayShape      |
+| `fill`   | Value to be splatted across the array                       | Scalar[dtype]     |
+| `order`  | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional) |
 
 ### Example
 
@@ -183,7 +197,9 @@ var arr = nj.NDArray[nj.f16](shape, random=True, order="F")
 var shape = NDArrayShape(2, 3, 5)
 var arr = nj.NDArray[nj.f16](shape, random=True, order="F")
 ```
+
 ---
+
 <br>
 
 9. **`numojo.ndarray[dtype](data, shape, order)`**
@@ -194,18 +210,20 @@ var arr = nj.NDArray[nj.f16](shape, random=True, order="F")
 | ------------- | ------------------------------ | ---------------- |
 | `dtype`       | Datatype of the array elements | Datatype (DType) |
 
-| **Args** | **Description**               | **Type**                  |
-| -------- | ----------------------------- | ------------------------- |
-| `data`  | List of elements to be filled in the array            | List[SIMD[dtype, 1]] |
-| `shape` | Shape of the array   | List[Int]          |
-| `order`    | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional)             |
+| **Args** | **Description**                                             | **Type**             |
+| -------- | ----------------------------------------------------------- | -------------------- |
+| `data`   | List of elements to be filled in the array                  | List[SIMD[dtype, 1]] |
+| `shape`  | Shape of the array                                          | List[Int]            |
+| `order`  | Defines Row `C` or Columns major `F` ndarray (default: "C") | String (optional)    |
 
 ### Example
 
 ```python
 var arr = nj.NDArray[nj.i32](data = List[SIMD[nj.i32, 1]](1, 2, 3, 4, 5, 6), shape = List[Int](2, 3), order = "F")
 ```
+
 ---
+
 <br>
 
 10. **`numojo.ndarray[dtype](ndim, offset, size, shape, strides, coefficients)`**

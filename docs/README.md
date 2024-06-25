@@ -1,4 +1,6 @@
-# 🌟 NuMojo Documentation 🌟
+# 🔥 NuMojo Documentation
+
+<!-- maybe add logo here  -->
 
 Welcome to the **NuMojo** documentation! Here you will find detailed information on various topics related to numerical computing and data analysis.
 
@@ -10,6 +12,7 @@ Welcome to the **NuMojo** documentation! Here you will find detailed information
 - [Routines](#routines)
 
 ### Array
+
 - [NDArrays](./ndarrays/ndarray.md)
 
 ### Linear Algebra
@@ -17,6 +20,7 @@ Welcome to the **NuMojo** documentation! Here you will find detailed information
 ### Calculus
 
 ### Routines
+
 - [Mathematical Functions](./routines/mathfuncs.md)
 - [Array Creation Routines](./routines/array_creation_routines.md)
 - [Array Manipulation Routines](./routines/array_manipulation_routines.md)
