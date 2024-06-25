@@ -1,8 +1,8 @@
-# Welcome to NuMojo Documentation
+# **NuMojo** 🔥 Examples, Tests, Documentation & Benchmarks
 
 Thank you for exploring the NuMojo Library! This repository showcases various examples and benchmarks to demonstrate the capabilities of NuMojo.
 
-For a deeper dive into the syntax and features of NuMojo, we recommend checking out the code examples in the `examples` notebook. While NuMojo is still evolving, we are committed to continuously updating the documentation to provide comprehensive information.
+For a deeper dive into the syntax and features of NuMojo, we recommend checking out the code examples in the `examples` [notebook](./examples.ipynb). While NuMojo is still evolving, we are committed to continuously updating the documentation to provide comprehensive information.
 
 Feel free to delve into the examples notebook and benchmarks included here to enhance your understanding of the NuMojo Library and its functionalities.
 

@@ -1,6 +1,7 @@
 ## NDArray
 
 <!-- WRITE ALL THE CONSTUCTORS HERE AND DEFINE THEIR SYNTAX TOO -->
+[← Back to NDArray](./ndarray.md)
 
 An array object represents a multidimensional, homogeneous array of fixed-size items. It is accompanied by intrinsic information such as shape, stride, datatype etc (Check [attributes](./attributes.md) for more information) that defines the characteristics of the array and its elements.
 

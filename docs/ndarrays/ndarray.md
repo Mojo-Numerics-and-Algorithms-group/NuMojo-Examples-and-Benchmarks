@@ -1,11 +1,12 @@
 # N-dimensional array (NDArray)
 
-Welcome to the NDArray API documentation!
+[← Back to README](../README.md)
+
+**Welcome to the NDArray API documentation!**
 
 An N-dimensional array (NDArray) is a fundamental data structure that allows you to store and manipulate multi-dimensional data efficiently. In this documentation, you will learn how to effectively work with N-dimensional arrays in our library.
 
 ### Example
-
 Creating a Float32 type row major 2D array of size 2x3 with given List of elements:
 
 ```python
@@ -75,8 +76,8 @@ NuMojo provides several methods to convert NDArrays to other formats or modify t
 
 | Method                      | Description                                               |
 | --------------------------- | --------------------------------------------------------- |
-| **[NDArray.to_numpy()]()**  | Returns a numpy array equivalent of the NDArray.          |
-| **[NDArray.to_tensor()]()** | Returns the Mojo stdlib Tensor equivalent of the NDArray. |
-| **[NDArray.fill(value)]()** | Fills the entire NDArray with the given value.            |
+| **[NDArray.to_numpy()](./ndarray_utils.md)**  | Returns a numpy array equivalent of the NDArray.          |
+| **[NDArray.to_tensor()](./ndarray_utils.md)** | Returns the Mojo stdlib Tensor equivalent of the NDArray. |
+| **[NDArray.fill(value)](./ndarray_utils.md)** | Fills the entire NDArray with the given value.            |
 
 These conversion methods allow for seamless integration with other libraries and provide flexibility in data manipulation.

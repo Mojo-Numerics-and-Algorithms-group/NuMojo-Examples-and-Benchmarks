@@ -1,5 +1,9 @@
-# NDArray Attributes
+# NDArray Attributes 
+[← Back to NDArray](./ndarray.md)
 
+In this section, we provide information on the various intrinsic attributes associated with N-dimensional arrays (NDArrays) in the NuMojo library. These attributes provide essential information about the structure and properties of NDArrays, enabling efficient data manipulation and analysis. Understanding these attributes is crucial for effectively working with NDArrays, as they allow you to access and modify key aspects of the array, such as its dimensions, shape, stride, and more.
+
+Let's dive into the details of each attribute and see how they can be utilized in your data processing tasks.
 ## ndim
 `NDArray.ndim`
 

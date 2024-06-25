@@ -32,3 +32,5 @@ Welcome to the **NuMojo** documentation! Here you will find detailed information
 ---
 
 > **Note:** Not all available methods are documented yet. We will try to make it up to date as soon as possible.
+
+[← Back to NuMojo homepage](../README.md)
