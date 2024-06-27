@@ -1,0 +1,32 @@
+{
+" 64 x 64 " :{
+"FMA":  {"Number of runs": 500,"mean": 6822.0100000000002,"std": 11145.864241497835} ,
+"Mul":  {"Number of runs": 500,"mean": 6417.4719999999998,"std": 9770.1898498041464} ,
+"Matmul tup":  {"Number of runs": 500,"mean": 35681.856,"std": 25032.622438954815} ,
+"Matmul tup CxF":  {"Number of runs": 500,"mean": 34753.196000000004,"std": 17342.298869572736}
+},
+" 128 x 128 " :{
+"FMA":  {"Number of runs": 500,"mean": 24257.82,"std": 19113.951934845903} ,
+"Mul":  {"Number of runs": 500,"mean": 23677.998,"std": 19594.915623957058} ,
+"Matmul tup":  {"Number of runs": 500,"mean": 107045.38,"std": 30977.536564672107} ,
+"Matmul tup CxF":  {"Number of runs": 500,"mean": 104681.906,"std": 22425.843198710809}
+},
+" 256 x 256 " :{
+"FMA":  {"Number of runs": 500,"mean": 101326.624,"std": 43426.846970124665} ,
+"Mul":  {"Number of runs": 500,"mean": 96416.714000000007,"std": 35695.956076791175} ,
+"Matmul tup":  {"Number of runs": 500,"mean": 557803.98600000003,"std": 105549.52157084279} ,
+"Matmul tup CxF":  {"Number of runs": 500,"mean": 558970.34199999995,"std": 120148.66411212832}
+},
+" 512 x 512 " :{
+"FMA":  {"Number of runs": 500,"mean": 387716.49599999998,"std": 56083.473833367236} ,
+"Mul":  {"Number of runs": 500,"mean": 380622.10399999999,"std": 56076.674707557155} ,
+"Matmul tup":  {"Number of runs": 500,"mean": 3855284.9380000001,"std": 747569.05937458796} ,
+"Matmul tup CxF":  {"Number of runs": 500,"mean": 3806952.7820000001,"std": 610979.14520673652}
+},
+" 1024 x 1024 " :{
+"FMA":  {"Number of runs": 500,"mean": 1675340.2379999999,"std": 33417.945864779838} ,
+"Mul":  {"Number of runs": 500,"mean": 1708718.1799999999,"std": 340630.28972654743} ,
+"Matmul tup":  {"Number of runs": 500,"mean": 35716588.391999997,"std": 6750084.488015092} ,
+"Matmul tup CxF":  {"Number of runs": 500,"mean": 35703788.684,"std": 6879411.2058013435}
+}
+}
