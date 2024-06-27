@@ -51,7 +51,7 @@ NDArrays come with several intrinsic attributes that provide valuable informatio
 | [**NDArray.ndim**](./attributes.md#ndim)                 | Number of dimensions in the array.                                                                         |
 | [**NDArray.ndshape**](./attributes.md#nshape)            | Shape and size of the array.                                                                               |
 | [**NDArray.stride**](./attributes.md#stride)             | Stride to step through each dimension of the array when traversing.                                        |
-| [**NDArray.coefficients**](./attributes.md#coefficients) | Information about strides required to create the array after slicing - only for arrays created by slicing. |
+| [**NDArray.coefficient**](./attributes.md#coefficient) | Information about strides required to create the array after slicing - only for arrays created by slicing. |
 | [**NDArray.data**](./attributes.md#data)                 | DTypePointer object pointing to the start of the array data stored in heap.                                |
 | [**NDArray.datatype**](./attributes.md#datatype)         | Information about the datatype of array elements.                                                          |
 | [**NDArray.order**](./attributes.md#order)               | Denotes whether the array is C-style (row-major) or Fortran-style (column-major).                          |
@@ -76,8 +76,8 @@ NuMojo provides several methods to convert NDArrays to other formats or modify t
 
 | Method                      | Description                                               |
 | --------------------------- | --------------------------------------------------------- |
-| **[NDArray.to_numpy()](./ndarray_utils.md)**  | Returns a numpy array equivalent of the NDArray.          |
-| **[NDArray.to_tensor()](./ndarray_utils.md)** | Returns the Mojo stdlib Tensor equivalent of the NDArray. |
-| **[NDArray.fill(value)](./ndarray_utils.md)** | Fills the entire NDArray with the given value.            |
+| [**NDArray.to_numpy()**](./ndarray_utils.md#to_numpy)  | Returns a numpy array equivalent of the NDArray.          |
+| [**NDArray.to_tensor()**](./ndarray_utils.md#to_tensor) | Returns the Mojo stdlib Tensor equivalent of the NDArray. |
+| [**NDArray.fill(value)**](./ndarray_utils.md#fill) | Fills the entire NDArray with the given value.            |
 
 These conversion methods allow for seamless integration with other libraries and provide flexibility in data manipulation.
