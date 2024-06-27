@@ -5,7 +5,7 @@ from testing import assert_raises
 import time
 
 import numojo as nm
-from numojo.ndarray import NDArray
+from numojo.core.ndarray import NDArray
 
 # Run with
 # mojo run -I "../NuMojo" ndarray.mojo

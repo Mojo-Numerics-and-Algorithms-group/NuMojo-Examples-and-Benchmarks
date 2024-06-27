@@ -25,7 +25,7 @@ import numojo.math.linalg.matmul as matmul
 #     print(arr1.row(1))
 #     print(arr1.col(2))
 fn main() raises:
-    get(5, 5 ,100)
+    get(1000, 1000 ,100)
     # var arr = numojo.core.random.rand[i8](4,5)
     # print(arr)
     # var arrshape = NDArrayShape(shape=List[Int](2,3,4,5))
@@ -57,8 +57,11 @@ fn get(m:Int, n:Int, times:Int) raises:
     var Af = NDArray[DType.float64](data=raw, shape=List[Int](m,n), order="F")
     var Bc = NDArray[DType.float64](data=raw, shape=List[Int](m,n), order="C")
     var Bf = NDArray[DType.float64](data=raw, shape=List[Int](m,n), order="F")
-    print(Ac)
-    print(Bc)
+    # print(Ac)
+    # print(Bc)
+    print(Ac[0,1])
+    print(Ac[0:1,:])
+    print(Ac[0:1,0:1])
     print(str("=") * 50)
 
     # # matmul naive
@@ -91,63 +94,63 @@ fn get(m:Int, n:Int, times:Int) raises:
     # print(arr3)
     # print(str("=") * 50)
 
-    # matmul paralelled
-    print(str("Matmul paralelled CxC"))
-    var arr8 = NDArray[numojo.f64]()
-    t0 = time.now()
-    for _i in range(times):
-        arr8 = matmul.matmul_parallelized(Ac, Bc)
-    print((time.now()-t0)/1e9/times, "s")
-    print(arr8)
-    print(str("=") * 50)
+    # # matmul paralelled
+    # print(str("Matmul paralelled CxC"))
+    # var arr8 = NDArray[numojo.f64]()
+    # t0 = time.now()
+    # for _i in range(times):
+    #     arr8 = matmul.matmul_parallelized(Ac, Bc)
+    # print((time.now()-t0)/1e9/times, "s")
+    # print(arr8)
+    # print(str("=") * 50)
     
-    # matmul paralelled
-    print(str("Matmul paralelled CxF"))
-    var arr9 = NDArray[numojo.f64]()
-    t0 = time.now()
-    for _i in range(times):
-        arr9 = matmul.matmul_parallelized(Ac, Bf)
-    print((time.now()-t0)/1e9/times, "s")
-    print(arr9)
-    print(str("=") * 50)
+    # # matmul paralelled
+    # print(str("Matmul paralelled CxF"))
+    # var arr9 = NDArray[numojo.f64]()
+    # t0 = time.now()
+    # for _i in range(times):
+    #     arr9 = matmul.matmul_parallelized(Ac, Bf)
+    # print((time.now()-t0)/1e9/times, "s")
+    # print(arr9)
+    # print(str("=") * 50)
 
-    # matmul paralelled
-    print(str("Matmul paralelled FxF"))
-    var arr10 = NDArray[numojo.f64]()
-    t0 = time.now()
-    for _i in range(times):
-        arr10 = matmul.matmul_parallelized(Af, Bf)
-    print((time.now()-t0)/1e9/times, "s")
-    print(arr10)
-    print(str("=") * 50)
+    # # matmul paralelled
+    # print(str("Matmul paralelled FxF"))
+    # var arr10 = NDArray[numojo.f64]()
+    # t0 = time.now()
+    # for _i in range(times):
+    #     arr10 = matmul.matmul_parallelized(Af, Bf)
+    # print((time.now()-t0)/1e9/times, "s")
+    # print(arr10)
+    # print(str("=") * 50)
 
 
-    # matmul paralelled 2
-    print(str("Matmul paralelled 2 CxC"))
-    t0 = time.now()
-    for _i in range(times):
-        arr8 = matmul.matmul_parallelized_nelts(Ac, Bc)
-    print((time.now()-t0)/1e9/times, "s")
-    print(arr8)
-    print(str("=") * 50)
+    # # matmul paralelled 2
+    # print(str("Matmul paralelled 2 CxC"))
+    # t0 = time.now()
+    # for _i in range(times):
+    #     arr8 = matmul.matmul_parallelized_nelts(Ac, Bc)
+    # print((time.now()-t0)/1e9/times, "s")
+    # print(arr8)
+    # print(str("=") * 50)
     
-    # matmul paralelled 2
-    print(str("Matmul paralelled 2 CxF"))
-    t0 = time.now()
-    for _i in range(times):
-        arr9 = matmul.matmul_parallelized_nelts(Ac, Bf)
-    print((time.now()-t0)/1e9/times, "s")
-    print(arr9)
-    print(str("=") * 50)
+    # # matmul paralelled 2
+    # print(str("Matmul paralelled 2 CxF"))
+    # t0 = time.now()
+    # for _i in range(times):
+    #     arr9 = matmul.matmul_parallelized_nelts(Ac, Bf)
+    # print((time.now()-t0)/1e9/times, "s")
+    # print(arr9)
+    # print(str("=") * 50)
 
-    # matmul paralelled 2
-    print(str("Matmul paralelled 2 FxF"))
-    t0 = time.now()
-    for _i in range(times):
-        arr10 = matmul.matmul_parallelized_nelts(Af, Bf)
-    print((time.now()-t0)/1e9/times, "s")
-    print(arr10)
-    print(str("=") * 50)
+    # # matmul paralelled 2
+    # print(str("Matmul paralelled 2 FxF"))
+    # t0 = time.now()
+    # for _i in range(times):
+    #     arr10 = matmul.matmul_parallelized_nelts(Af, Bf)
+    # print((time.now()-t0)/1e9/times, "s")
+    # print(arr10)
+    # print(str("=") * 50)
 
     # # matmul paralelled tiled unrolling
     # print(str("Matmul paralelled tiled unrolling CxC"))
