@@ -2,10 +2,26 @@
 [← Back to NDArray](./ndarray.md)
 
 ## to_numpy
-`NDArray.to_numpy()`
+**`to_numpy(array: NDArray) -> PythonObject`**
 
-## to_tensor
-`NDArray.to_tensor()`
+Converts a NDArray into a numpy array. 
 
-## fill
-`NDArray.fill()`
+### Inputs
+| **Args** | **Description**                                             | **Type**                   |
+| -------- | ----------------------------------------------------------- | -------------------------- |
+| `array` | NDArray to be converted | NDArray |
+
+### Example
+
+```python
+import numojo as nj
+var arr = nj.NDArray(3, 2, random=True)
+var numpy_arr = nj.to_numpy(arr)
+```
+
+---
+
+<br>
+
+<!-- ## to_tensor
+`NDArray.to_tensor()` -->
