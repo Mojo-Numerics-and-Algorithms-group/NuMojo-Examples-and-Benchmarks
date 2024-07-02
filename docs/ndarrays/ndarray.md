@@ -1,27 +1,32 @@
 # N-dimensional array (NDArray)
 
-Welcome to the NDArray API documentation!
+[← Back to README](../README.md)
+
+**Welcome to the NDArray API documentation!**
 
 An N-dimensional array (NDArray) is a fundamental data structure that allows you to store and manipulate multi-dimensional data efficiently. In this documentation, you will learn how to effectively work with N-dimensional arrays in our library.
 
 ### Example
-Creating a row major 3D array of size 3x2x4 with random float32 elements:
+Creating a Float32 type row major 2D array of size 2x3 with given List of elements:
+
 ```python
     >>> import numojo as nj
     >>> var arr = nj.NDArray[nj.f32](data=List[Int](1,2,3,4,5,6), shape=List[Int](2,3)) # creates a 2x3 array filled with given data elements
-    >>> arr.shape 
+    >>> arr.shape
     > Shape: [2,3]
     >>> arr.dtype
     > DType: Float32
 ```
 
 The array can be indexed using numpy syntax,
+
 ```python
     >>> arr[1,2] # selects element from 1st row, 2nd column
     > 6
 ```
 
 One can also slice similar to numpy (Currently it returns a new array instead of view, this behaviour will change in later versions),
+
 ```python
     >>> var sliced = arr[:,0:1] # selects all the rows from first column
     >>> sliced
@@ -41,15 +46,15 @@ NuMojo offers multiple methods for creating NDArrays. You can create new arrays 
 
 NDArrays come with several intrinsic attributes that provide valuable information about the array structure and allow for manipulation. Here's a comprehensive list of these attributes:
 
-| Attribute | Description |
-|-----------|-------------|
-| **[NDArray.ndim](./attributes.md#ndim)** | Number of dimensions in the array. |
-| **[NDArray.ndshape](./attributes.md#nshape)** | Shape and size of the array. |
-| **[NDArray.stride](./attributes.md#stride)** | Stride to step through each dimension of the array when traversing. |
-| **[NDArray.coefficients](./attributes.md#coefficients)** | Information about strides required to create the array after slicing - only for arrays created by slicing. |
-| **[NDArray.data](./attributes.md#data)** | DTypePointer object pointing to the start of the array data stored in heap. |
-| **[NDArray.datatype](./attributes.md#datatype)** | Information about the datatype of array elements. |
-| **[NDArray.order](./attributes.md#order)** | Denotes whether the array is C-style (row-major) or Fortran-style (column-major). |
+| Attributes | Description| 
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| [**NDArray.ndim**](./attributes.md#ndim)                 | Number of dimensions in the array.                                                                         |
+| [**NDArray.ndshape**](./attributes.md#nshape)            | Shape and size of the array.                                                                               |
+| [**NDArray.stride**](./attributes.md#stride)             | Stride to step through each dimension of the array when traversing.                                        |
+| [**NDArray.coefficient**](./attributes.md#coefficient) | Information about strides required to create the array after slicing - only for arrays created by slicing. |
+| [**NDArray.data**](./attributes.md#data)                 | DTypePointer object pointing to the start of the array data stored in heap.                                |
+| [**NDArray.datatype**](./attributes.md#datatype)         | Information about the datatype of array elements.                                                          |
+| [**NDArray.order**](./attributes.md#order)               | Denotes whether the array is C-style (row-major) or Fortran-style (column-major).                          |
 
 These attributes not only provide information about the array but also allow you to modify certain properties to change the array structure.
 
@@ -69,10 +74,9 @@ For a complete list of available methods, please refer to the specific method do
 
 NuMojo provides several methods to convert NDArrays to other formats or modify their contents:
 
-| Method | Description |
-|--------|-------------|
-| **[NDArray.to_numpy()]()** | Returns a numpy array equivalent of the NDArray. |
-| **[NDArray.to_tensor()]()** | Returns the Mojo stdlib Tensor equivalent of the NDArray. |
-| **[NDArray.fill(value)]()** | Fills the entire NDArray with the given value. |
+| Method                      | Description                                               |
+| --------------------------- | --------------------------------------------------------- |
+| [**NDArray.to_numpy()**](./ndarray_utils.md#to_numpy)  | Returns a numpy array equivalent of the NDArray.          |
+<!-- | [**NDArray.to_tensor()**](./ndarray_utils.md#to_tensor) | Returns the Mojo stdlib Tensor equivalent of the NDArray. | -->
 
 These conversion methods allow for seamless integration with other libraries and provide flexibility in data manipulation.

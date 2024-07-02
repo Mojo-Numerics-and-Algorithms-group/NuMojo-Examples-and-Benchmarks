@@ -1,5 +1,9 @@
-# NDArray Attributes
+# NDArray Attributes 
+[← Back to NDArray](./ndarray.md)
 
+In this section, we provide information on the various intrinsic attributes associated with N-dimensional arrays (NDArrays) in the NuMojo library. These attributes provide essential information about the structure and properties of NDArrays, enabling efficient data manipulation and analysis. Understanding these attributes is crucial for effectively working with NDArrays, as they allow you to access and modify key aspects of the array, such as its dimensions, shape, stride, and more.
+
+Let's dive into the details of each attribute and see how they can be utilized in your data processing tasks.
 ## ndim
 `NDArray.ndim`
 
@@ -45,8 +49,8 @@ Defines the List of stride values that is need to traverse the dimensions of the
     > 0
 ```
 
-## coefficients
-`NDArray.coefficients`
+## coefficient
+`NDArray.coefficient`
 
 Defines the List of stride values that is need to traverse the dimensions of a sliced array and the offset value of the array (First index to which the pointer points to). It is an instance of the NDArrayStride struct. This is for internal use to calculate sliced arrays. If the array is a parent array (i.e not created by slicing, it's value is same as stride).
 
@@ -54,10 +58,10 @@ Defines the List of stride values that is need to traverse the dimensions of a s
 ```python
     >>> import numojo as nj
     >>> var arr = nj.NDArray[nj.f32](3, 4, 5, 6, random=True) # creates a 3x4x5x6 array filled with random float32 values
-    >>> print(arr.coefficients, arr.stride)
+    >>> print(arr.coefficient, arr.stride)
     > Stride: [120, 30, 6, 1]  Stride: [120, 30, 6, 1]
     >>> var sliced = arr[:,:,0:1,:]
-    >>> print(sliced.coefficients, sliced.stride)
+    >>> print(sliced.coefficient, sliced.stride)
     > Stride: [24, 6, 1]  Stride: [120, 30, 1] 
     >>> sliced.ndshape._size
     >  72 # total number of elements in the array
