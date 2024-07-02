@@ -7,6 +7,7 @@ Welcome to the **NuMojo** documentation! Here you will find detailed information
 ## 📚 Table of Contents
 
 - [Array](#array)
+- [Data Types](#data-types)
 - [Linear Algebra](#linear-algebra)
 - [Calculus](#calculus)
 - [Routines](#routines)
@@ -14,6 +15,10 @@ Welcome to the **NuMojo** documentation! Here you will find detailed information
 ### Array
 
 - [NDArrays](./ndarrays/ndarray.md)
+
+### Data types
+
+- [Data types in NuMojo](./datatypes.md)
 
 ### Linear Algebra
 

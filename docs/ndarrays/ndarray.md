@@ -77,7 +77,6 @@ NuMojo provides several methods to convert NDArrays to other formats or modify t
 | Method                      | Description                                               |
 | --------------------------- | --------------------------------------------------------- |
 | [**NDArray.to_numpy()**](./ndarray_utils.md#to_numpy)  | Returns a numpy array equivalent of the NDArray.          |
-| [**NDArray.to_tensor()**](./ndarray_utils.md#to_tensor) | Returns the Mojo stdlib Tensor equivalent of the NDArray. |
-| [**NDArray.fill(value)**](./ndarray_utils.md#fill) | Fills the entire NDArray with the given value.            |
+<!-- | [**NDArray.to_tensor()**](./ndarray_utils.md#to_tensor) | Returns the Mojo stdlib Tensor equivalent of the NDArray. | -->
 
 These conversion methods allow for seamless integration with other libraries and provide flexibility in data manipulation.
