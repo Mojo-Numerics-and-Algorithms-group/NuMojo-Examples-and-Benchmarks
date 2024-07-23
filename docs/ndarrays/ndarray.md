@@ -11,7 +11,7 @@ Creating a Float32 type row major 2D array of size 2x3 with given List of elemen
 
 ```python
     >>> import numojo as nj
-    >>> var arr = nj.NDArray[nj.f32](data=List[Int](1,2,3,4,5,6), shape=List[Int](2,3)) # creates a 2x3 array filled with given data elements
+    >>> var arr = nj.NDArray[nj.f32](data=List[Float32](1,2,3,4,5,6), shape=List[Int](2,3)) # creates a 2x3 array filled with given data elements
     >>> arr.shape
     > Shape: [2,3]
     >>> arr.dtype
